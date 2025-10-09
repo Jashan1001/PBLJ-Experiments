@@ -38,10 +38,10 @@ class Employee {
 public class EmployeeSorter {
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee("Alice", 30, 80000));
-        employees.add(new Employee("Bob", 25, 65000));
-        employees.add(new Employee("Charlie", 35, 95000));
-        employees.add(new Employee("David", 25, 72000));
+        employees.add(new Employee("Aman", 30, 80000));
+        employees.add(new Employee("Raman", 25, 65000));
+        employees.add(new Employee("Simran", 35, 95000));
+        employees.add(new Employee("Harleen", 25, 72000));
 
         System.out.println("--- Original List ---");
         employees.forEach(System.out::println);

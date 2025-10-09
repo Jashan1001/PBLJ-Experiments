@@ -32,12 +32,12 @@ class Student {
 public class StudentStreamProcessor {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Eve", 85));
-        students.add(new Student("Frank", 72));
-        students.add(new Student("Grace", 95));
-        students.add(new Student("Heidi", 78));
-        students.add(new Student("Ivan", 65));
-        students.add(new Student("Judy", 91));
+        students.add(new Student("Jashan", 85));
+        students.add(new Student("Kanika", 72));
+        students.add(new Student("Riya", 95));
+        students.add(new Student("Diya", 78));
+        students.add(new Student("Siya", 65));
+        students.add(new Student("Priya", 91));
 
         System.out.println("--- Original Student List ---");
         students.forEach(System.out::println);
