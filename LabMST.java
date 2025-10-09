@@ -5,29 +5,32 @@ public class LabMST{
 
         String s=sc.nextLine();
         
-        int vowels=0;
-        int consonants=0;
-        int digits=0;
-        int specialChar=0;
+        int vw=0;
+        int cn=0;
+        int dig=0;
+        int spChar=0;
 
         for(int i=0;i<s.length();i++){
             char ch=s.charAt(i);
             if(ch>='a' && ch<='z' || ch>='A' && ch<='Z'){
                 if(ch=='a' || ch=='e' || ch=='i' || ch=='o' ||ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
-                    vowels++;
+                    vw++;
                 }
                 else{
-                    consonants++;
+                    if(cn<3){
+                        cn++;
+                    }
                 }
             }else if(ch>='0' && ch<='9'){
-                digits++;
+                dig++;
             }else{
-                specialChar++;
+                spChar++;
             }
         }
-        System.out.println("Vowels: " + vowels);
-        System.out.println("Consonants: " + consonants);
-        System.out.println("Digits: " + digits);
-        System.out.println("Special Characters: " + specialChar);
+        System.out.println("Vowels: " + vw);
+        System.out.println("Consonants: " + cn);
+        System.out.println("Digits: " + dig);
+        System.out.println("Special Characters: " + spChar);
+        sc.close();
     }
 }
